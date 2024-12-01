@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Store</title>
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=expand_circle_down" />
+    <link rel="stylesheet" href="productSection.css">
+     <!-- External CSS link -->
+</head>
+<body>
+  <div class="products-section">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo on the left -->
+            <a href="#" class="logo">NASRO</a>
+
+            <!-- Navbar Links on the right -->
+            <ul class="nav-links">
+                <li><a href="#new-arrivals" class="home">Home</a></li>
+
+                <!-- Dropdown for Sections -->
+                <li class="dropdown">
+                    <select class="dropdown-select" onchange="window.location.href=this.value;">
+                        <option value="#new-arrivals">New Arrivals</option>
+                        <option value="#best-sellers">Best Sellers</option>
+                        <option value="#discounts">Discounts</option>
+                        <option value="#sporty-t-shirts" class="">Sporty T-shirts</option>
+                        <option value="#printed-t-shirts">Printed T-shirts</option>
+                    </select>
+                </li>
+
+                <!-- Basket Icon -->
+                <li><a href="#" class="basket-icon"><span class="material-icons" id="show-x-hide-cart">shopping_basket</span></a></li>
+            </ul>
+        </div>        
+    </nav>
+<!-- Search Bar Section -->
+<div class="custom-search-bar-container">
+    <div class="custom-search-bar">
+        <input type="text" class="custom-search-input" id="search-input"
+placeholder="Search for products...">
+        <button class="custom-search-button">
+            <span class="material-icons">search</span>
+        </button>
+    </div>
+</div>
+         
+    <!-- New Arrivals Section -->
+  <div class="project">
+    <section id="new-arrivals" class="section">
+        <div class="container">
+            <h2 style="margin-top: 30px" class="section-title">New Arrivals</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="n1.jpg" alt="New Arrival 1" class="product-image">
+                    <h3 class="product-title">Printed T-shirt 1</h3>
+                    <p class="product-description">A trendy printed t-shirt perfect for casual wear.</p>
+                    <div class="product-price">95DH</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="n2.jpg" alt="New Arrival 2" class="product-image">
+                    <h3 class="product-title">Sporty T-shirt 2</h3>
+                    <p class="product-description">Designed for comfort and performance, ideal for sports.</p>
+                    <div class="product-price">95DH</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Add more products here -->
+            </div>
+        </div>
+    </section>
+<br>
+    <!-- Printed T-Shirts Section -->
+    <section id="printed-t-shirts" class="section">
+        <div class="container">
+            <h2 class="section-title">Printed T-Shirts</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="n3.jpg" alt="Printed T-shirt 1" class="product-image">
+                    <h3 class="product-title">Printed T-shirt 1</h3>
+                    <p class="product-description">A stylish printed t-shirt for your casual collection.</p>
+                    <div class="product-price">95DH</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="n2.jpg" alt="Printed T-shirt 2" class="product-image">
+                    <h3 class="product-title">Printed T-shirt 2</h3>
+                    <p class="product-description">A cool design printed on high-quality fabric.</p>
+                    <div class="product-price">95DH</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Add more products here -->
+            </div>
+        </div>
+    </section>
+<br>
+    <!-- Best Sellers Section -->
+    <section id="best-sellers" class="section">
+        <div class="container">
+            <h2 class="section-title">Best Sellers</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="n3.jpg" alt="Best Seller 1" class="product-image">
+                    <h3 class="product-title">Best Seller 1</h3>
+                    <p class="product-description">Our best-selling t-shirt loved by everyone.</p>
+                    <div class="product-price">95DH</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="n1.jpg" alt="Best Seller 2" class="product-image">
+                    <h3 class="product-title">Best Seller 2</h3>
+                    <p class="product-description">A top-rated t-shirt with a unique print.</p>
+                    <div class="product-price">95DH</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Add more products here -->
+            </div>
+        </div>
+    </section>
+<br>
+    <!-- Discounts Section -->
+    <section id="discounts" class="section">
+        <div class="container">
+            <h2 class="section-title">Discounts</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="n2.jpg" alt="Discount T-shirt 1" class="product-image">
+                    <h3 class="product-title">Discounted T-shirt 1</h3>
+                    <p class="product-description">Get this cool t-shirt at a discounted price.</p>
+                    <div class="product-price">95DH</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="n1.jpg" alt="Discount T-shirt 2" class="product-image">
+                    <h3 class="product-title">Discounted T-shirt 2</h3>
+                    <p class="product-description">A high-quality t-shirt at an unbeatable price.</p>
+                    <div class="product-price">95DH</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Add more products here -->
+            </div>
+        </div>
+    </section>
+<br>
+    <!-- Sporty T-Shirts Section -->
+    <section id="sporty-t-shirts" class="section">
+        <div class="container">
+            <h2 class="section-title">Sporty T-Shirts</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="n3.jpg" alt="Sporty T-shirt 1" class="product-image">
+                    <h3 class="product-title">Sporty T-shirt 1</h3>
+                    <p class="product-description">A t-shirt designed for performance and comfort.</p>
+                    <div class="product-price">95DH</div>
+     
+                   <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="n4.jpg" alt="Sporty T-shirt 2" class="product-image">
+                    <h3 class="product-title">Sporty T-shirt 2</h3>
+                    <p class="product-description">A stylish sporty t-shirt for your workout sessions.</p>
+                    <div class="product-price">32.99</div>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Add more products here -->
+            </div>
+        </div>
+    </section>
+  </div>
+ </div>
+<!-- cart --> 
+    <!-- Navbar -->
+    <div class="hidden">
+<nav class="navbar2">
+    <div class="container">
+        <a href="#" class="logo">ZN-STORE</a>
+        <div class="basket-icon">
+            <span>🛒</span>
+        </div>
+    </div>
+</nav>
+
+<!-- Cart Section -->
+<div class="cart-container">
+  <div class="flex">
+        <span class="material-icons" id="hide-cart">chevron_left</span>
+        
+    <h1>Your Shopping Cart</h1>
+  </div>
+    <div class="cart-items">
+        
+       
+    </div>
+
+    <!-- Cart Total -->
+    <div class="cart-total">
+        <p>Total: <span id="total-price">$59.97</span></p>
+    </div>
+
+    <!-- Checkout Button -->
+    <div class="checkout">
+        <button class="btn-checkout">Proceed to Checkout</button>
+      </div>
+  </div>
+</div>
+<!-- Product Details Section -->
+ <div class="product-details-container" id="hide">
+   <span class="material-icons" id="hide-product-details" style="margin-top: 80px">chevron_left</span> <div class="product-images" >
+        <img src="https://via.placeholder.com/400" alt="Product Image" class="main-image">
+        <div class="thumbnail-images">
+            <img src="n1.jpg" alt="Thumbnail Image 1" class="thumbnail">
+            <img src="n1.jpg" alt="Thumbnail Image 2" class="thumbnail">
+            <img src="n2.jpg" alt="Thumbnail Image 3" class="thumbnail">
+        </div>
+    </div>
+
+    <div class="product-info">
+        <h1>Sporty T-Shirt</h1>
+        <p class="product-description">A stylish sporty t-shirt that keeps you comfortable and fashionable at all times. Perfect for gym or casual wear.</p>
+        <div class="price">
+           <!--  <span class="original-price">95DH</span> -->
+            <span  class="discount-price">95DH</spank her>
+        </div>
+       
+ 
+     
+       <!--  <button class="btn-add-to-cart ">Add to Cart</button> 
+    </div>
+</div> -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Brand Name. All rights reserved.</p>
+    </footer>
+    <script>
+   // Make a product function
+function productMaker(imgSrc, h1, description, price, sectionToAppend) {
+    // Create product elements
+    let productCard = document.createElement("div");
+    let img = document.createElement("img");
+    let header = document.createElement("h3");
+    let p = document.createElement("p");
+    let productPrice = document.createElement("div");
+    let but = document.createElement("button");
+
+    // Select the specific section
+    let appendTo = document.querySelector(sectionToAppend);
+
+    // Check if the section exists
+    if (!appendTo) {
+        console.error(`Section with selector "${sectionToAppend}" not found.`);
+        return;
+    }
+
+    // Find the correct product grid within the section
+    let productGrid = appendTo.querySelector(".product-grid");
+
+    // Check if the product grid exists in the section
+    if (!productGrid) {
+        console.error(`No .product-grid found in section "${sectionToAppend}"`);
+        return;
+    }
+
+    // Adding classes to product elements
+    productCard.className = "product-card";
+    img.className = "product-image";
+    header.className = "product-title";
+    p.className = "product-description";
+    productPrice.className = "product-price";
+    but.className = "btn add-to-cart";
+
+    // Adding content
+    img.src = imgSrc;
+    header.textContent = h1;
+    p.textContent = description;
+    productPrice.textContent = price;
+    but.textContent = "Add to Cart";
+
+    // Append elements to the product card
+    productCard.append(img, header, p, productPrice, but);
+
+    // Append the product card to the correct product grid
+    productGrid.append(productCard);
+}
+
+// Add products dynamically
+
+// Block: Show and Hide Cart
+let toggleButton = document.querySelector("#show-x-hide-cart");
+let hidden = document.querySelector(".hidden");
+let productsSection = document.querySelector(".products-section");
+let produitDetails = document.querySelector('.product-details-container');
+
+toggleButton.addEventListener('click', () => {
+    hidden.style.display = 'block';
+    productsSection.style.display = 'none';
+    produitDetails.style.display = "none";
+});
+
+let hideCart = document.querySelector("#hide-cart");
+hideCart.addEventListener('click', () => {
+    hidden.style.display = 'none';
+    productsSection.style.display = 'block';
+});
+
+// Delegate event listener for dynamically added "Add to Cart" buttons
+document.addEventListener('click', (event) => {
+    if (event.target && event.target.classList.contains('add-to-cart')) {
+        let pushToCart = event.target;
+
+        // Get elements
+        let PriceElement = pushToCart.previousElementSibling;
+        let descriptionElement = PriceElement.previousElementSibling;
+        let TitleElement = descriptionElement.previousElementSibling;
+        let imgElement = TitleElement.previousElementSibling;
+
+        // Create new elements
+        let newItem = document.createElement("div");
+        let productInfo = document.createElement("div");
+        let image = document.createElement("img");
+        let productDetails = document.createElement("div");
+        let productH2 = document.createElement("h2");
+        let productParagraph = document.createElement("p");
+        let productQuantity = document.createElement("h2");
+        let input = document.createElement("input");
+        input.style.background = '#ff6347';
+        let deleteButton = document.createElement("button");
+        let productPrice = document.createElement("h2");
+
+        // Adding classes
+        newItem.className = "cart-item";
+        productInfo.className = "product-info";
+        image.className = "product-image";
+        productDetails.className = "product-details";
+        productQuantity.className = "product-quantity";
+        productPrice.className = "product-price";
+        deleteButton.className = "delete-element-cart";
+        input.style.cssText = "height: 45px; width: 70px; padding: 10px 5px; background: #ff6347; margin: 10px 0; color: white; font-weight: 500; border: 1px #2b2b2b solid; outline: none; border-radius: 5px;";
+        input.setAttribute("placeholder", "Quantity");
+        input.className = "quantity"
+
+        // Appending
+        productInfo.append(image, productDetails);
+        productDetails.append(productH2, productParagraph);
+        productQuantity.append(input, deleteButton);
+        newItem.append(productInfo, productQuantity, productPrice);
+
+        // Set attributes and text content
+        image.src = imgElement.src;
+        productH2.textContent = TitleElement.textContent;
+        productPrice.textContent = PriceElement.textContent;
+        deleteButton.textContent = "DELETE";
+
+        // Append to cart
+        let cartItems = document.querySelector(".cart-items");
+        cartItems.appendChild(newItem);
+
+        // Save product info to localStorage
+        let product = {
+            title: TitleElement.textContent,
+            price: PriceElement.textContent,
+            image: imgElement.src,
+            header: productH2.textContent
+        };
+
+        // Retrieve and update localStorage
+        let newProductInCart = JSON.parse(localStorage.getItem("newItem")) || [];
+        newProductInCart.push(product);
+        localStorage.setItem("newItem", JSON.stringify(newProductInCart));
+
+        // Delete button functionality
+        deleteButton.addEventListener('click', () => {
+            newItem.remove();
+            newProductInCart = newProductInCart.filter(item => item.title !== product.title);
+            localStorage.setItem("newItem", JSON.stringify(newProductInCart));
+            input.style.background = '#ff6347';
+            calculateTotal();
+        });
+
+        calculateTotal();
+        input.style.background = '#ff6347';
+    }
+});
+
+// Reload cart items from localStorage on page load
+window.onload = () => {
+
+    let savedCart = JSON.parse(localStorage.getItem("newItem")) || [];
+    let cartItems = document.querySelector(".cart-items");
+
+    savedCart.forEach(product => {
+        let newItem = document.createElement("div");
+        let productInfo = document.createElement("div");
+        let image = document.createElement("img");
+        let productDetails = document.createElement("div");
+        let productH2 = document.createElement("h2");
+        let productQuantity = document.createElement("h2");
+        let input = document.createElement("input");
+        let deleteButton = document.createElement("button");
+        let productPrice = document.createElement("h2");
+
+        newItem.className = "cart-item";
+        productInfo.className = "product-info";
+        image.className = "product-image";
+        productDetails.className = "product-details";
+        productQuantity.className = "product-quantity";
+        productPrice.className = "product-price";
+        deleteButton.className = "delete-element-cart";
+        input.style.cssText = "height: 45px; width: 70px; padding: 10px 5px; background: #ffb300; margin: 10px 0; color: white; font-weight: 500; border: 1px #2b2b2b solid; outline: none; border-radius: 5px;";
+        input.style.background = '#ff6347';
+        input.setAttribute("placeholder", "Quantity");
+
+        productInfo.append(image, productDetails);
+        productQuantity.append(input, deleteButton);
+        newItem.append(productInfo, productQuantity, productPrice);
+
+        image.src = product.image;
+        productH2.textContent = product.title;
+        productPrice.textContent = product.price;
+        deleteButton.textContent = "DELETE";
+
+        cartItems.appendChild(newItem);
+
+        deleteButton.addEventListener('click', () => {
+            newItem.remove();
+            savedCart = savedCart.filter(item => item.title !== product.title);
+            localStorage.setItem("newItem", JSON.stringify(savedCart));
+            calculateTotal();
+        });
+    });
+
+    calculateTotal();
+};
+
+// Calculate total price
+function calculateTotal() {
+    let priceElements = document.querySelectorAll('.cart-item .product-price');
+    let total = 0;
+
+    priceElements.forEach(priceElement => {
+        let priceValue = parseFloat(priceElement.textContent.replace('$', '').trim());
+        total += priceValue;
+    });
+
+    let totalPriceElement = document.querySelector('#total-price');
+    if (totalPriceElement) {
+totalPriceElement.textContent = `${total.toFixed(2)}DH`;
+    }
+}
+
+// Block: Product details on image click
+let productCards = document.querySelectorAll('.product-image');
+let project = document.querySelector('.project');
+
+productCards.forEach(productImage => {
+    productImage.onclick = () => {
+        project.style.display = "none";
+        produitDetails.style.display = "block";
+        window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
+        let mySrc = document.querySelector(".main-image");
+        mySrc.src = productImage.src;
+    };
+});
+
+let hideShivron = document.querySelector("#hide-product-details");
+hideShivron.addEventListener('click', () => {
+    project.style.display = "block";
+    produitDetails.style.display = "none";
+});
+
+      
+
+    // Function to filter products based on the search query
+    function searchProducts(query) {
+        // Get all sections with product grids
+        const sections = document.querySelectorAll('.section');
+        let hasResults = false;
+
+        // Loop through each section to check for matching products
+        sections.forEach(section => {
+            const products = section.querySelectorAll('.product-card');
+            let sectionHasMatches = false;
+
+            products.forEach(product => {
+                const productTitle = product.querySelector('.product-title').textContent.toLowerCase();
+                const productDescription = product.querySelector('.product-description').textContent.toLowerCase();
+
+                // Check if the search query matches the product title or description
+                if (productTitle.includes(query.toLowerCase()) || productDescription.includes(query.toLowerCase())) {
+                    product.style.display = 'block'; // Show matching products
+                    sectionHasMatches = true;
+                } else {
+                    product.style.display = 'none'; // Hide non-matching products
+                }
+            });
+
+            // If no products match, show a message
+            if (!sectionHasMatches) {
+                const existingMessage = section.querySelector('.no-results-message');
+                if (!existingMessage) {
+                    const message = document.createElement('p');
+                    message.textContent = 'No products match your search.';
+                    message.style.color = 'red';
+                    message.style.textAlign = 'center';
+                    message.classList.add('no-results-message');
+                    section.appendChild(message);
+                }
+            } else {
+                // Remove any existing "no results" message if there are matches
+                const existingMessage = section.querySelector('.no-results-message');
+                if (existingMessage) {
+                    existingMessage.remove();
+                }
+            }
+
+            // If the section has results, set the flag
+            if (sectionHasMatches) {
+                hasResults = true;
+            }
+        });
+
+        // If no sections had any results, you could add more logic here if needed
+        if (!hasResults) {
+            console.log('No results found across all sections.');
+        }
+    }
+
+    // Attach an event listener to the search input to trigger the search
+    document.querySelector('#search-input').addEventListener('input', (event) => {
+        const query = event.target.value;
+        searchProducts(query);
+    });
+    input.style.background = '#ff6347';
+  
+      
+
+   productMaker("n2.jpg", "Hi from JS", "This is a div made with JS script", "95DH", "#discounts");
+   productMaker("n2.jpg", "Hi from JS", "This is a div made with JS script", "95DH", "#discounts");
+  </script>
+</body>
+</html>

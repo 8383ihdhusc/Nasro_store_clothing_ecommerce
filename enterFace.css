@@ -1,0 +1,351 @@
+/* EnterFace.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+header img {
+    height: 50px;
+}
+
+.search-bar {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    transition: all 0.3s;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.search-bar:focus {
+    border-color: #ff6347;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-image {
+    height: 50vh;
+    background: url('hero.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+.hero-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Flash Sale Section */
+.flash-sale {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6347;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.flash-sale .cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #ff6347;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.flash-sale .cta-button:hover {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-item p {
+    margin: 10px 0;
+}
+
+/* Top Brands */
+.top-brands {
+    text-align: center;
+    padding: 20px;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.brand-logos img {
+    height: 60px;
+}
+
+/* Reviews Section */
+.reviews-section {
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+.reviews-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.review img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+/* Newsletter Section */
+.newsletter {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+    width: 200px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #ff6347;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.newsletter button:hover {
+    background: #ff4500;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ff6347;
+    margin-right: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+span {
+    padding-right: 10px;
+}
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff6347;
+}
+
+/* Search Bar */
+.search-bar {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .search-bar {
+    margin: 10px auto;
+    width: 90%;
+  }
+}
+/* Container for the section */
+.visit-products {
+    background-color: #f3f3f3; /* Light background */
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    width: 90%; /* Make it responsive */
+}
+
+/* Title Styling */
+.visit-products h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.visit-products p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.view-products-button {
+    background-color: #ff6347; /* Orange-red background */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.view-products-button:hover {
+    background-color: #ff4500; /* Darker shade on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.view-products-button:active {
+    background-color: #ff3b30; /* Active state */
+    transform: translateY(0);
+}
